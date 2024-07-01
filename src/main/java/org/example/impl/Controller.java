@@ -45,21 +45,18 @@ public class Controller extends ComplexCalc {
             case 1:
                 ComplexCalc sum = ComplexCalc.add(c1, c2);
                 String logMessage = String.format("Сумма: %.2f + %.2fi", sum.real, sum.imag);
-                logger.info(logMessage);
                 System.out.println(logMessage);
                 break;
 
             case 2:
                 ComplexCalc product = ComplexCalc.multiply(c1, c2);
                 logMessage = String.format("Произведение: %.2f + %.2fi", product.real, product.imag);
-                logger.info(logMessage);
                 System.out.println(logMessage);
                 break;
 
             case 3:
                 ComplexCalc quotient = ComplexCalc.divide(c1, c2);
                 logMessage = String.format("Частное: %.2f + %.2fi", quotient.real, quotient.imag);
-                logger.info(logMessage);
                 System.out.println(logMessage);
                 break;
 
